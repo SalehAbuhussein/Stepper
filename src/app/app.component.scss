@@ -1,0 +1,13 @@
+h3.step-title {
+  width: fit-content;
+  margin-bottom: 24px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 7px;
+    width: 100%;
+    background-color: rgba(#1A891E, 0.1);
+  }
+}

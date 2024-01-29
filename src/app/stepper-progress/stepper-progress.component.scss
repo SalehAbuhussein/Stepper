@@ -1,0 +1,34 @@
+.progress-bar {
+  height: 4px;
+  background-color: #ECEDF1;
+
+  &:after {
+    transition: width 300ms;
+    content: '';
+    position: absolute;
+    inset-inline-start: 0;
+    top: 0;
+    height: 4px;
+    width: 0;
+    background-color: black;
+  }
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+
+[class^="step-"] {
+  &.active {
+    font-weight: bold;
+    color: #1A891E;
+
+    .progress-bar {
+      &:after {
+        background-color: #1A891E;
+        width: 100%;
+      }
+    }
+  }
+}

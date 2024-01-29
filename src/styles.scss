@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+@import "assets/styles/mixins";
+
+
+@include custom-margins();
+@include custom-paddings();
+@include custom-column-gaps();
+@include custom-gaps();
+@include text-alignment();
+
+.font-size-24 {
+  font-size: 24px;
+}
+
+.font-size-21 {
+  font-size: 21px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-14 {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

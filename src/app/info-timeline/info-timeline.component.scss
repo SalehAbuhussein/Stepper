@@ -1,0 +1,23 @@
+li {
+  display: flex;
+  gap: 12px;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.vertical-line {
+  width: 1px;
+  background-color: #1A891E;
+  z-index: 1000;
+  top: 12px;
+  inset-inline-start: calc(5px + 1px);
+}
+
+.info-timeline-container {
+  ul {
+    padding: 0;
+  }
+}

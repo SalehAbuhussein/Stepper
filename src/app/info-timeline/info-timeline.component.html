@@ -1,0 +1,52 @@
+<div class="container info-timeline-container">
+  <ul class="list-unstyled position-relative d-flex flex-column gap-56">
+    <!--  There is no clear structure   -->
+
+    <li class="car-details flex-column">
+    </li>
+
+    <li class="car-details flex-column">
+      <div class="car-details-header d-flex gap-12 align-items-center">
+        <!--        <ng-content select="car-details-header-content"></ng-content>-->
+        <img class="img-fluid" src="/assets/bullet.svg" alt=""/>
+        <h2>1. الحالة الخارجية (البودي)</h2>
+      </div>
+      <div class="car-details-body">
+        <!--        <ng-content select="car-details-body-content"></ng-content>-->
+        <app-valuate-car-info-box></app-valuate-car-info-box>
+      </div>
+    </li>
+    <li class="car-details flex-column">
+      <!--   Check if it is last element   -->
+      <!--      <ng-content select="last-item-vertical-line"></ng-content>-->
+      <!--
+          in case there is one item don't show it so something like this:
+          timeline.length > 1 && timeline item is last item
+
+        -->
+      <ng-container *ngIf="true">
+        <div class="vertical-line position-absolute"></div>
+      </ng-container>
+      <div class="car-details-header d-flex gap-12 align-items-center">
+        <img class="img-fluid" src="/assets/bullet.svg" alt=""/>
+        <h2>1. الحالة الخارجية (البودي)</h2>
+      </div>
+      <div class="car-details-body">
+        <app-valuate-car-info-box></app-valuate-car-info-box>
+      </div>
+    </li>
+    <li class="car-details flex-column">
+      <!--   Check if it is last element   -->
+      <ng-container *ngIf="true">
+        <div class="vertical-line position-absolute"></div>
+      </ng-container>
+      <div class="car-details-header d-flex gap-12 align-items-center">
+        <img class="img-fluid" src="/assets/bullet.svg" alt=""/>
+        <h2>1. الحالة الخارجية (البودي)</h2>
+      </div>
+      <div class="car-details-body">
+        <app-valuate-car-info-box></app-valuate-car-info-box>
+      </div>
+    </li>
+  </ul>
+</div>

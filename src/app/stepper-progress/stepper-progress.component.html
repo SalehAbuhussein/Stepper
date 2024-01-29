@@ -1,0 +1,10 @@
+<div class="row g-0 text-center">
+  <ng-container *ngFor="let item of stepperList; let i = index">
+    <div class="col-md-{{ Math.floor(12 / stepperList.length) }}">
+      <div [ngClass]="{'active': item.isActive}" class="step-{{ i + 1 }} cpx-4 d-flex flex-column gap-8">
+        <div class="progress-bar position-relative"></div>
+        <span>{{ item.title }}</span>
+      </div>
+    </div>
+  </ng-container>
+</div>
